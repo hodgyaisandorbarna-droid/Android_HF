@@ -1,0 +1,50 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imgFlag"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EUR"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imgFlag"
+        app:layout_constraintTop_toTopOf="@id/imgFlag"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/txtBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cumpar_4_4100_ron"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/imgFlag"
+        app:layout_constraintTop_toBottomOf="@id/txtCurrency"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/txtSell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/vinde_4_5500_ron"
+        android:textSize="14sp"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        app:layout_constraintStart_toEndOf="@id/imgFlag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtBuy"
+        android:layout_marginStart="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
